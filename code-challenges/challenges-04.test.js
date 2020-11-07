@@ -22,10 +22,10 @@ let $ = createSnippetWithJQuery(`
 </section>
 `);
 
-const generateSubmitButton = () => {
+const generateSubmitButton = (() => {
   // Solution code here...
   $('form').append('<button>submit</button>');
-};
+});
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
@@ -39,14 +39,14 @@ For example:
 'hello world' returns false
 ------------------------------------------------------------------------------------------------ */
 
-const isNum = (input) => {
+const isNum = (input => {
   // Solution code here...
 
   let regex = /\d/g;
   if (regex.test(input)) {
     return true;
   }
-};
+});
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 3
@@ -56,22 +56,35 @@ Write a function named isCapitalized that takes in a string. This function shoul
 Return an array containing all the matches.
 ------------------------------------------------------------------------------------------------ */
 
-const isCapitalized = (str) => {
+const isCapitalized = (str => {
   // Solution code here...
-  let regex = /(([A-Z]*))\w+/g;
-  let found = str.match(regex);
-  return found;
-};
-//need to return whole words?
+  let capitalized = [];
+  let regex = /\b[A-Z][a-z]+/g;
+  capitalized = str.match(regex);
+  if (str.match(regex) === null) {
+    capitalized = [];
+  }
+  return capitalized;
+});
+
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 4
  
 Write a function named citiesAtoJ that takes in an array of city names and uses a regular expression pattern to return a new array containing any cities that begin with the letters A through J, inclusive.
 ------------------------------------------------------------------------------------------------ */
 
-const citiesAtoJ = (arr) => {
+const citiesAtoJ = (arr => {
   // Solution code here...
-};
+  let arrayOfCities = [];
+  arr.forEach(stringy => {
+    let regex = /^[A-J]/g;
+    let result = regex.test(stringy);
+    if (result === true) {
+      arrayOfCities.push(stringy);
+    }
+  });
+  return arrayOfCities;
+});
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 5 - Stretch Goal
