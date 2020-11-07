@@ -8,14 +8,14 @@ Write a function named raisedToTheThird that takes in an array of numbers and re
 
 ------------------------------------------------------------------------------------------------ */
 
-const raisedToTheThird = (arr) => {
+const raisedToTheThird = ((arr) => {
   // Solution code here...
   let placeHolder = [];
   arr.forEach(element => {
     placeHolder.push(Math.pow(element, 3));
   });
   return placeHolder;
-};
+});
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
@@ -24,11 +24,11 @@ Write a function that appends ' The end.' to a string, and returns the modified 
 
 ------------------------------------------------------------------------------------------------ */
 
-const appendTheEnd = (str) => {
+const appendTheEnd = (str => {
   // Solution code here...
   let appen = str.concat(' The end.');
   return appen;
-};
+});
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 3
@@ -43,10 +43,10 @@ appendFirstToLast(a);
 console.log(a) prints [1, 2, 3, 1]
 ------------------------------------------------------------------------------------------------ */
 
-const appendFirstToLast = (arr) => {
+const appendFirstToLast = (arr => {
   // Solution code here...
   arr.push(arr[0]);
-};
+});
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 4
@@ -63,10 +63,10 @@ addBirthYearProperty(octavia, 1947);
 console.log(a) prints { fullName: 'Octavia Estelle Butler', yearBorn: 1947 }
 ------------------------------------------------------------------------------------------------ */
 
-const addBirthYearProperty = (obj, year) => {
+const addBirthYearProperty = ((obj, year) => {
   // Solution code here...
   obj.yearBorn = year;
-};
+});
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 5 - Stretch Goal
@@ -81,10 +81,10 @@ setStatusAsAuthor(people);
 console.log(people[1].isAuthor) prints true
 ------------------------------------------------------------------------------------------------ */
 
-const setStatusAsAuthor = (people) => {
+const setStatusAsAuthor = ((people) => {
   // Solution code here...
 
-};
+});
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 6 - Stretch Goal
@@ -101,10 +101,10 @@ append(a, b);
 console.log(a) prints [1, 2, 3, 4]
 ------------------------------------------------------------------------------------------------ */
 
-const append = (arr1, arr2) => {
+const append = ((arr1, arr2) => {
   // Solution code here...
 
-};
+});
 
 /* ------------------------------------------------------------------------------------------------
 TESTS

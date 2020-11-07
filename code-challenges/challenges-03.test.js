@@ -17,10 +17,10 @@ let $ = createSnippetWithJQuery(`
 </ul>
 `);
 
-const changeAllClassNames = () => {
+const changeAllClassNames = (() => {
   // Solution code here...
   $('li').addClass('fruit');
-};
+});
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
@@ -28,12 +28,12 @@ CHALLENGE 2
 Write a function named sortBackwards that takes in an array of numbers and returns the same array, with the numbers sorted, highest to smallest.
 ------------------------------------------------------------------------------------------------ */
 
-const sortBackwards = (arr) => {
+const sortBackwards = (arr => {
   // Solution code here...
   arr.sort((a, b) =>
     b - a);
   return arr;
-};
+});
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 3
@@ -45,11 +45,11 @@ In this alphabetization, capital letters come before lower case letters.
 For example, ['Alphabet', 'Zebra', 'alphabet', 'carrot'] is correctly sorted.
 ------------------------------------------------------------------------------------------------ */
 
-const alphabetize = (arr) => {
+const alphabetize = (arr => {
   // Solution code here...
   arr.sort();
   return arr;
-};
+});
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 4
@@ -57,12 +57,12 @@ CHALLENGE 4
 Write a function named sortByLength that takes in an array of strings and returns the same array, with the strings sorted by their length, lowest to highest.
 ------------------------------------------------------------------------------------------------ */
 
-const sortByLength = (arr) => {
+const sortByLength = (arr => {
   // Solution code here...
   arr.sort((a, b) =>
     a.length - b.length);
   return arr;
-};
+});
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 5 - Stretch Goal
