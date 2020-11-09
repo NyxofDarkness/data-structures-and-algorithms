@@ -48,11 +48,11 @@ const addNumbers = ((num, arr, times, callback) => {
 });
 
 /* ------------------------------------------------------------------------------------------------
-
+ 
 CHALLENGE 3
-
+ 
 Write a function named createList that takes in an array of the current store intentory.
-
+ 
 The inventory is formatted like this:
 [
   { name: 'apples', available: true },
@@ -61,15 +61,19 @@ The inventory is formatted like this:
   { name: 'bananas', available: true },
   { name: 'blueberries', available: false }
 ]
-
+ 
 This function should use forEach to populate your grocery list based on the store's inventory. If the item is available, add it to your list. Return the final list.
 ------------------------------------------------------------------------------------------------ */
 
-const createList = (items => {
+const createList = ((availableItems) => {
   // Solution code here...
-  // items.forEach(element){
-  //   if (element.available === 'true') { return availableItems };
-  // }
+  let newItems = [];
+  availableItems.forEach(element => {
+    if (element.available === true) {
+      newItems.push(element.name);
+    }
+  });
+  return newItems;
 });
 
 /* ------------------------------------------------------------------------------------------------
@@ -86,9 +90,17 @@ Iterate over the array using forEach to determine the output based on several ru
 Return the resulting output array.
 ------------------------------------------------------------------------------------------------ */
 
-const fizzbuzz = (arr) => {
+const fizzbuzz = (arr => {
   // Solution code here...
-};
+  let ChangeOfNumbers = [];
+  arr.forEach(value => {
+    if (value % 3 === 0 && value % 5 === 0) { ChangeOfNumbers.push('Fizz Buzz'); }
+    else if (value % 3 === 0) { ChangeOfNumbers.push('Fizz'); }
+    else if (value % 5 === 0) { ChangeOfNumbers.push('Buzz'); }
+    else { ChangeOfNumbers.push(value); }
+  });
+  return ChangeOfNumbers;
+});
 
 /* ------------------------------------------------------------------------------------------------
 TESTS
