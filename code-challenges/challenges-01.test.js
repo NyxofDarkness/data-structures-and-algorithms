@@ -34,7 +34,7 @@ Within the addNumbers function, invoke the callback function as many times as ne
 Return the modified array.
 ------------------------------------------------------------------------------------------------ */
 
-const addValues = ((arr, value) => {
+const addValues = ((arr, value => {
   // Solution code here...
   arr.push(value);
 });
