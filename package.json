@@ -12,9 +12,19 @@
   "license": "MIT",
   "dependencies": {
     "cheerio": "^1.0.0-rc.3",
-    "mustache": "^4.0.1",
-    "supertest": "^4.0.2",
     "eslint": "^7.2.0",
-    "jest": "^26.0.1"
-  }
+    "express": "^4.17.1",
+    "jest": "^26.0.1",
+    "mustache": "^4.0.1",
+    "supertest": "^4.0.2"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NyxofDarkness/data-structures-and-algorithms.git"
+  },
+  "bugs": {
+    "url": "https://github.com/NyxofDarkness/data-structures-and-algorithms/issues"
+  },
+  "homepage": "https://github.com/NyxofDarkness/data-structures-and-algorithms#readme"
 }
