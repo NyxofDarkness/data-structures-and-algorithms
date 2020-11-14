@@ -27,6 +27,7 @@ const createServer = () => {
 
   // Routes go here
   // Solution code here...
+  app.get('/events', getCurrentEvents);
 
   var server = app.listen(3301, function () {
     var port = server.address().port;
@@ -157,17 +158,18 @@ const currentEvents = {
       url: "https://bgr.com/2020/04/13/coronavirus-mask-effectiveness-surgical-how-to/"
     }
   ]
-}
+};
 
 function getCurrentEvents(request, response) {
   // Solution code here...
-  response.send(mapCurrentEvents());
+  let displayOfNews = mapCurrentEvents();
+  response.json(displayOfNews);
 }
 
 const mapCurrentEvents = (() => {
   // Solution code here...
-  let currentEventsArray = currentEvents.news.map(object => new Event(object));
-  return currentEventsArray;
+  let array = currentEvents.news.map(object => new Event(object));
+  return array;
 });
 
 function Event(obj) {
