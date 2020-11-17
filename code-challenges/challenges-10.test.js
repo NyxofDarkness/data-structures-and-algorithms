@@ -45,10 +45,16 @@ For example, count(5, [[1, 3, 5, 7, 9], [5, 5, 5], [1, 2, 3]]) returns 4.
 
 const count = (target, input) => {
   // Solution code here...
-
-  var inputs = input.map((input) => input.count);
-  return inputs;
+  let startAtZero = 0;
+  input.map(element => {
+    // need to filter element for the target. prob === thing
+    // will I need to pop it into a var for this purpose?
+    let theseNumbers = element.filter(num => num === target);
+    startAtZero += theseNumbers.length;
+  });
+  return startAtZero;
 };
+// I wonder if this can be refactored with a forEach as I am looking at length?
 
 
 /* ------------------------------------------------------------------------------------------------
@@ -63,6 +69,8 @@ For example, [[1, 2, 3, 4, 5], [6, 7, 2, 4, 5, 7], [9, 2, 3, 6,]] returns 66.
 
 function totalSum(input) {
   // Solution code here...
+  let placeholder = input.reduce((account, value) => account + value.reduce((account, currentValue) => account + currentValue), 0);
+  return placeholder;
 }
 
 /* ------------------------------------------------------------------------------------------------
