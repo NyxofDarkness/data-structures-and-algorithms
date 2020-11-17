@@ -47,6 +47,7 @@ const count = (target, input) => {
   // Solution code here...
 
   var inputs = input.map((input) => input.count);
+  return inputs;
 };
 
 

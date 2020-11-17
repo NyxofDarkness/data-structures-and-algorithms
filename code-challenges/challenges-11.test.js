@@ -14,13 +14,13 @@ You can assume that neither firstName nor lastName will be blank
 const toLastNames = people => {
   // Solution code here...
   let names = people.map(data => {
-    return data
+    return data;
   });
   let anArray = [];
   names.reduce((person, name) => {
     anArray.push(`${name.firstName} ${name.lastName}`);
     return person;
-
+    // saw everyone else doing this space after but don't know why... something to do with the (..., ...)
   }, ' ');
 
   return anArray;
