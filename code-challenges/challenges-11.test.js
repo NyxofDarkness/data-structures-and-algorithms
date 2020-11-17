@@ -20,7 +20,9 @@ const toLastNames = people => {
   names.reduce((person, name) => {
     anArray.push(`${name.firstName} ${name.lastName}`);
     return person;
+
   }, ' ');
+
   return anArray;
 };
 
