@@ -26,9 +26,9 @@ const createServer = () => {
   app.get('*', (req, res) => {
     res.status(404).send('nothing to see here');
   });
-
   var server = app.listen(3301, function () {
     var port = server.address().port;
+    console.log('Example app listening at port', port);
   });
   return server;
 };
@@ -45,13 +45,8 @@ For example, count(5, [[1, 3, 5, 7, 9], [5, 5, 5], [1, 2, 3]]) returns 4.
 
 const count = (target, input) => {
   // Solution code here...
-  return input.reduce((adding, value) =>
-    value.reduce((addingTheTargets, value) => {
-      if (value === target) {
-        var addTheThings = addingTheTargets++;
-        return addTheThings;
-      }
-    }));
+
+  var inputs = input.map((input) => input.count);
 };
 
 
