@@ -87,6 +87,13 @@ For example, [ [0,2,5,4], [2,4,10], [] ] should return [ [1, 32], [1024], [] ].
 
 const divisibleByFiveTwoToThePower = (input) => {
   // Solution code here...
+  let array = input.map(element => {
+    let noFives = element.filter(five => (typeof (five) === 'number' && five % 5 === 0));
+    // after filter the above for all instances of fives, we map that new array and return it to the power of two.wrap it all in its own little array wrapper
+    let power = noFives.map(element => Math.pow(2, element));
+    return power;
+  });
+  return array;
 };
 
 /* ------------------------------------------------------------------------------------------------
