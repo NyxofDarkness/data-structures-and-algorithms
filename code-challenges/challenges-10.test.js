@@ -48,9 +48,17 @@ For example, count(5, [[1, 3, 5, 7, 9], [5, 5, 5], [1, 2, 3]]) returns 4.
 const count = (target, input) => {
   // Solution code here...
 
+  let startAtZero = 0;
+  input.map(element => {
+    // need to filter element for the target. prob === thing
+    // will I need to pop it into a var for this purpose?
+    let theseNumbers = element.filter(num => num === target);
+    startAtZero += theseNumbers.length;
+  });
+  return startAtZero;
 
-  var inputs = input.map((input) => input.count);
 };
+// I wonder if this can be refactored with a forEach as I am looking at length?
 
 
 /* ------------------------------------------------------------------------------------------------
@@ -65,6 +73,8 @@ For example, [[1, 2, 3, 4, 5], [6, 7, 2, 4, 5, 7], [9, 2, 3, 6,]] returns 66.
 
 function totalSum(input) {
   // Solution code here...
+  let placeholder = input.reduce((account, value) => account + value.reduce((account, currentValue) => account + currentValue), 0);
+  return placeholder;
 }
 
 /* ------------------------------------------------------------------------------------------------
@@ -82,6 +92,13 @@ For example, [ [0,2,5,4], [2,4,10], [] ] should return [ [1, 32], [1024], [] ].
 
 const divisibleByFiveTwoToThePower = (input) => {
   // Solution code here...
+  let array = input.map(element => {
+    let noFives = element.filter(five => (typeof (five) === 'number' && five % 5 === 0));
+    // after filter the above for all instances of fives, we map that new array and return it to the power of two.wrap it all in its own little array wrapper
+    let power = noFives.map(element => Math.pow(2, element));
+    return power;
+  });
+  return array;
 };
 
 /* ------------------------------------------------------------------------------------------------
