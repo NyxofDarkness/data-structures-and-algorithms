@@ -9,6 +9,7 @@ Build a simple express server. Connect a '/hello' route that sends a greeting of
 const createServer = () => {
   // Solution code here...
   // need express
+
   // get apps: /hello /aboutme /favoritefoods res.status(404).send('Check somewhere else);
   const express = require('express');
   const app = express();
@@ -26,6 +27,7 @@ const createServer = () => {
   app.get('*', (req, res) => {
     res.status(404).send('nothing to see here');
   });
+
   var server = app.listen(3301, function () {
     var port = server.address().port;
     console.log('Example app listening at port', port);
@@ -45,6 +47,7 @@ For example, count(5, [[1, 3, 5, 7, 9], [5, 5, 5], [1, 2, 3]]) returns 4.
 
 const count = (target, input) => {
   // Solution code here...
+
   let startAtZero = 0;
   input.map(element => {
     // need to filter element for the target. prob === thing
@@ -53,6 +56,7 @@ const count = (target, input) => {
     startAtZero += theseNumbers.length;
   });
   return startAtZero;
+
 };
 // I wonder if this can be refactored with a forEach as I am looking at length?
 
@@ -82,6 +86,7 @@ This function should first remove any elements that are not numbers or are not d
  
 This function should then raise 2 to the power of the resulting numbers, returning an array of arrays.
  
+
 For example, [ [0,2,5,4], [2,4,10], [] ] should return [ [1, 32], [1024], [] ].
 ------------------------------------------------------------------------------------------------ */
 
@@ -98,12 +103,14 @@ const divisibleByFiveTwoToThePower = (input) => {
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 5 - Stetch Goal
+
  
 Write a function named findMaleAndFemale that, given the Star Wars data, below,
 returns the names of the characters whose gender is either male or female.
  
 The names should be combined into a single string with each character name separated by "and".
  
+
 For example, "C-3PO and Luke Skywalker".
 ------------------------------------------------------------------------------------------------ */
 
@@ -164,7 +171,9 @@ let findMaleAndFemale = (data) => {
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 6 - Stretch Goal
+
  
+
 Write a function named findShortest that, given the Star Wars data from Challenge 6, uses any combination of filter, map and reduce to return the name of the shortest character.
 ------------------------------------------------------------------------------------------------ */
 
@@ -174,6 +183,7 @@ let findShortest = (data) => {
 
 /* ------------------------------------------------------------------------------------------------
 TESTS
+
  
 All the code below will verify that your functions are working to solve the challenges.
  
@@ -181,6 +191,7 @@ DO NOT CHANGE any of the below code.
  
 Run your tests from the console: jest challenges-10.test.js
  
+
 ------------------------------------------------------------------------------------------------ */
 
 describe('Testing challenge 1', () => {
