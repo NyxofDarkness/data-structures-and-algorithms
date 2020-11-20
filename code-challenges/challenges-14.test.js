@@ -13,6 +13,15 @@ const createServer = () => {
   const app = express();
 
   // solution code goes here ...
+  app.get('/', (req, res) => {
+    res.status(200).send('Sorry, Try again.');
+  });
+  app.delete('/things/1', (req, res) => {
+    res.status(405).send('Method Not Allowed');
+  });
+  app.use('*', (req, res) => {
+    res.status(404).send('Sorry, Try again.');
+  });
 
   var server = app.listen(3000, function () {
     var port = server.address().port;
