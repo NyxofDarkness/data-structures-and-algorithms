@@ -18,4 +18,6 @@ Linear, one line problem
 
 ![Array Reverse Whiteboard](python/assets/reverse-array.jpg)
 
+[Array Reverse Code](python/array_reverse/array_reverse.py)
+
 Worked with [Nebiyu Kifle](https://github.com/neba9)
