@@ -17,3 +17,5 @@ Linear, one line problem
 ## Solution
 
 ![Array Reverse Whiteboard](python/assets/reverse-array.jpg)
+
+Worked with [Nebiyu Kifle](https://github.com/neba9)
