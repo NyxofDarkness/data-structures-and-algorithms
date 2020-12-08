@@ -16,7 +16,7 @@ Linear, one line problem
 
 ## Solution
 
-![Array Reverse Whiteboard](python/assets/reverse-array.png)
+![Array Reverse Whiteboard](/home/nyx/projects/codefellows/data-structures-and-algorithms/python/array_reverse/array_reverse.py)
 
 [Array Reverse Code](python/array_reverse/array_reverse.py)
 
