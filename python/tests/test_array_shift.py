@@ -1,9 +1,4 @@
-from array_shift import __version__
 from array_shift.array_shift import array_length, insertShiftArray
-
-
-def test_version():
-    assert __version__ == '0.1.0'
  
 # test = [3,4,5,6,7]
  

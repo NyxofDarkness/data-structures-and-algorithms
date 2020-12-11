@@ -13,7 +13,7 @@ Complexity is fair
 
 ## Solution
 
-![Array Shift White Board](../../../assets/array-shift.png)
+![Array Shift White Board](../assets/array-shift.png)
 [Array Shift Code](python/array_shift/array_shift.py)
 
 Worked with [Alan Karlo Mangubat](https://github.com/kmangub)
