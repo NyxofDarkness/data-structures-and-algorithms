@@ -18,6 +18,6 @@ Linear, one line problem
 
 ![Array Reverse White Board](../assets/reverse-array.png)
 
-[Array Reverse Code](python/array_reverse/array_reverse.py)
+[Array Reverse Code](../array_reverse.py)
 
 Worked with [Nebiyu Kifle](https://github.com/neba9)
