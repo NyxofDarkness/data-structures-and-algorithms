@@ -13,10 +13,3 @@ def insertShiftArray(arr, num):
 
     return arr
 
-# def array_length(arr):
-#     return len(test)
-
-# def insertShiftArray(arr, index, number):
-#     arr.insert(index, number)
-#     return arr
-
