@@ -7,3 +7,5 @@
 [Shift this array!](python/array_shift/README.md)
 
 [Binary Array Search](python/array-binary-search/README.md)
+
+[Linked List-Nodes](python/linked_list/linked_list.py)
