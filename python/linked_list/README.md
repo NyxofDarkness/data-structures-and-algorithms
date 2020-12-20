@@ -1,4 +1,4 @@
-# Linked Lists
+# Singly Linked Lists
 
 Create a Node class that has properties for the value stored in the Node, and a pointer to the next Node.
 
@@ -14,8 +14,8 @@ Create a Node class that has properties for the value stored in the Node, and a 
 ## Approach & Efficiency
 
 BigO:
-Time:O(n)
-Time is constant, not effected
+Time:O(1)
+Time is linear
 Space:O(n)
 Linear, one line problem
 
