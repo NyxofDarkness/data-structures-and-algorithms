@@ -19,7 +19,7 @@ class LinkedList:
         while current is not None:
             output += f'{{ {current.value} }} -> '
             current = current.next
-        return output + 'None'
+        return output + 'NONE'
 # check this later... none or null? 
     def insert(self, value):
         node = Node(value)
