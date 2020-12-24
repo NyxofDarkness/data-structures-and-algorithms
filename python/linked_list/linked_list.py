@@ -71,19 +71,26 @@ class LinkedList:
             current = current.next
             return
 
-    def insert_many(self):
-        new_linked = []
+    def insert_after(self, value, new_value):
+        new_node = Node(new_value)
         current = self.head
-        for value in range(1, 5):
-            self.insert(value)
-            new_linked.append(current.value)
-            current = current.next
+        
+        if current is None:
+            self.insert(new_node)
+            return
 
-        return(new_linked)
+        while current is not None:
+            if current.value == value:
+                new_node.next = current.next
+                current.next = new_node
+                
+            current = current.next
+            
 
 if __name__ == "__main__":
     new_node = Node(1)
     new_link = LinkedList()
+
     print(new_link)
 
 # tests the implementation
@@ -94,4 +101,5 @@ if __name__ == "__main__":
     print(new_link.append(10))
     print(new_link)
     print(new_node)
+    print()
 

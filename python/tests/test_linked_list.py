@@ -20,6 +20,7 @@ def test_insert(generate_new_list):
 ## need to write returns true, returns false
 ## returns all values in list
 
+# Add a node to the end of the linked list
 def test_append ():
     node = Node(0)
     link = LinkedList(node)
@@ -29,6 +30,8 @@ def test_append ():
     expected = f'{{ 4 }} -> {{ 0 }} -> {{ 10 }} -> NONE'
     assert actual == expected
 
+
+# Insert a node before a node located in the middle of a linked list
 def test_before ():
     node = Node(0)
     link = LinkedList(node)
@@ -37,6 +40,51 @@ def test_before ():
     link.insert_before(0, 5)
     actual = str(link)
     expected = f'{{ 4 }} -> {{ 5 }} -> {{ 0 }} -> {{ 10 }} -> NONE'
+    assert actual == expected
+
+# Can successfully insert a node before the first node of a linked lis
+def test_after ():
+    node = Node(0)
+    link = LinkedList(node)
+    link.insert(4)
+    link.append(10)
+    link.insert_after(10, 5)
+    actual = str(link)
+    expected = f'{{ 4 }} -> {{ 0 }} -> {{ 10 }} -> {{ 5 }} -> NONE'
+    assert actual == expected
+
+# Can successfully add multiple nodes to the end of a linked list
+def test_many():
+    # node = Node(4)
+    link = LinkedList()
+    link.insert(4)
+    link.append(1)
+    link.append(2)
+    link.append(3)
+    actual = str(link)
+    expected = f'{{ 4 }} -> {{ 1 }} -> {{ 2 }} -> {{ 3 }} -> NONE'
+    assert actual == expected
+
+    # Can successfully insert after a node in the middle of the linked list
+def test_before_node ():
+    node = Node(0)
+    link = LinkedList(node)
+    link.insert(4)
+    link.append(10)
+    link.insert_after(10, 5)
+    actual = str(link)
+    expected = f'{{ 4 }} -> {{ 0 }} -> {{ 10 }} -> {{ 5 }} -> NONE'
+    assert actual == expected
+
+# Can successfully insert a node after the last node of the linked list
+def test_after_last():
+    node = Node(0)
+    link = LinkedList(node)
+    link.insert(4)
+    link.append(10)
+    link.insert_after(10, 5)
+    actual = str(link)
+    expected = f'{{ 4 }} -> {{ 0 }} -> {{ 10 }} -> {{ 5 }} -> NONE'
     assert actual == expected
 
 ## fixture for code challenges 5, 6
