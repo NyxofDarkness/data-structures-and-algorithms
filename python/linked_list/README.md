@@ -21,8 +21,18 @@ Linear, one line problem
 
 ## Solution
 
-![Linked List White Board]()
+![Linked List White Board](../assets/linked_lists_whiteboard.png)
 
-[Array Reverse Code](../linked_list.py)
+[Linked List Code](../linked_list.py)
 
-<!-- Worked with []() -->
+Worked with:
+
+[Anthony Beaver](https://github.com/PyDrummer)
+
+[Amber Falbo](https://github.com/AmberFalbo/AmberFalbo)
+
+[Kim Damalas](https://github.com/kimmyd70)
+
+[Robert Carter](https://github.com/racarter1215)
+
+[PR URL](https://github.com/NyxofDarkness/data-structures-and-algorithms/pull/35)
