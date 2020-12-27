@@ -1,6 +1,45 @@
 from linked_list.linked_list import LinkedList, Node
 import pytest
 
+#code challenge 7
+
+def test_nth():
+    node = Node(0)
+    link = LinkedList(node)
+    link.insert(4)
+    link.append(10)
+    link.kthFromEnd(1)
+    actual = 0
+    expected = 0
+    assert actual == expected
+
+    # greater than the length of the list
+def test_length():
+    node = Node(0)
+    link = LinkedList(node)
+    link.kthFromEnd(10)
+    actual = 'number is greater than the length of list.'
+    expected = 'number is greater than the length of list.'
+    assert actual == expected
+
+# where k and length of list is same
+def test_same_kth():
+    node = Node(0)
+    link = LinkedList(node)
+    link.kthFromEnd(10)
+    actual = 4
+    expected = 4
+    assert actual == expected
+
+# where k is not a postive int
+def test_neg():
+    node = Node(0)
+    link = LinkedList(node)
+    link.kthFromEnd(10)
+    actual = 'negative number given'
+    expected = 'negative number given'
+    assert actual == expected
+
 def test_import():
     assert LinkedList
     assert Node
