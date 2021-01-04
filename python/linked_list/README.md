@@ -49,3 +49,5 @@ Worked with:
 [Robert Carter](https://github.com/racarter1215)
 
 [PR URL](https://github.com/NyxofDarkness/data-structures-and-algorithms/pull/35)
+
+[PR for Knth](https://github.com/NyxofDarkness/data-structures-and-algorithms/pull/37)
