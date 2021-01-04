@@ -40,6 +40,10 @@ def test_neg():
     expected = 'negative number given'
     assert actual == expected
 
+# where linked list is length of 1
+def test_one_kth():
+    
+
 def test_import():
     assert LinkedList
     assert Node
