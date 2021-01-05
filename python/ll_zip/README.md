@@ -11,4 +11,4 @@ Write a function called zipLists which takes two linked lists as arguments. Zip 
 
 ![ll_Zip White Board](../assets/g12.png)
 
-[PR for ll_zip]()
+[PR for ll_zip](https://github.com/NyxofDarkness/data-structures-and-algorithms/pull/38)
