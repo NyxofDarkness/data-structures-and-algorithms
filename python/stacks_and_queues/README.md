@@ -43,4 +43,4 @@ Write tests to prove the following functionality:
 
 ![stacks_and_queues White Board](../assets/stacks_and_queues.png)
 
-[PR for stacks_and_queues]()
+[PR for stacks_and_queues](https://github.com/NyxofDarkness/data-structures-and-algorithms/compare/stack-and-queue?expand=1)
