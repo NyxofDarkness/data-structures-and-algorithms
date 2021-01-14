@@ -71,3 +71,4 @@ class Queue():
             return True
         elif self.front != None:
             return False
+            
