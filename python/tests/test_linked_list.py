@@ -42,8 +42,8 @@ def test_neg():
 
 # where linked list is length of 1
 def test_one_kth():
+    pass
     
-
 def test_import():
     assert LinkedList
     assert Node
