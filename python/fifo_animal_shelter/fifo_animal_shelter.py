@@ -23,9 +23,6 @@ class AnimalShelter():
         """
         if self.cat.top.next == None:
             return self.cat.top.value
-        elif:
+        else:
             self.dog.top.next == None
             return self.dog.top.value
-        continue
-
-    
