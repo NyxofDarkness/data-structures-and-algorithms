@@ -23,4 +23,4 @@ Instantiate these Stack objects in your PseudoQueue constructor.
 
 ![queues-with-stacks White Board](../assets/que-with-stack.png)
 
-[PR for queues with stacks:](https://github.com/NyxofDarkness/data-structures-and-algorithms/pull/40)
+[PR for queues with stacks:](https://github.com/NyxofDarkness/data-structures-and-algorithms/pull/41)

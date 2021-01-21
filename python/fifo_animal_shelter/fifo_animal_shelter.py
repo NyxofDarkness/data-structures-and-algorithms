@@ -30,6 +30,7 @@ class AnimalShelter():
         Args:
             animal ([type]):
         """
+
         choice = choice.lower()
        
         if self.is_empty():
@@ -46,4 +47,4 @@ class AnimalShelter():
             return True
         else:
             return False
-    
+

@@ -1,5 +1,7 @@
 import pytest
+
 from fifo_animal_shelter.fifo_animal_shelter import Node, AnimalShelter
+
 
 #  animal added to shelter
 def test_animal_added():
