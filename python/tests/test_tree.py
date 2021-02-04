@@ -61,3 +61,20 @@ def test_tree_postorder():
     actual = tree.post_order()
     expected = [111, 112, 11, 2, 1]
     assert actual == expected
+
+# returns maximum value storerd on the binary tree
+
+def test_find_maximum_value():
+    tree = BinaryTree()
+    tree.root = Node(2)
+    tree.root.left = Node(7)
+    tree.root.right = Node(5)
+    tree.root.left.left = Node(2)
+    tree.root.left.right = Node(6)
+    tree.root.left.right.left = Node(5)
+    tree.root.left.right.right = Node(11)
+    tree.root.right.right = Node(9)
+    tree.root.right.right.left = Node(4)
+    actual = tree.find_maximum_value()
+    expected = 11
+    assert actual == expected
