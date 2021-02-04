@@ -49,6 +49,24 @@ class BinaryTree:
             return order
         return traverse(self.root)
     
+    # Write an instance method called find-maximum-value. Without utilizing any of the built-in methods available to your language, return the maximum value stored in the tree. You can assume that the values stored in the Binary Tree will be numeric.
+
+    def find_maximum_value(self, max=[None]):
+        if not self.root:
+            raise ValueError(f'Oh no, search is empty')
+        def traverse(root, max):
+            if not root:
+                return
+            if max[0] == None or max[0] < root.value:
+                max.pop(0)
+                max.append(root.value)
+            if root.left:
+                traverse(root.left, max)
+            if root.right:
+                traverse(root.right, max)
+            return max
+        max = traverse(self.root, max)[0]
+        return max
 # which returns an array of the values, ordered appropriately.
 # Any exceptions or errors that come from your code should be semantic, capturable errors. For example, rather than a default error thrown by your language, your code should raise/throw a custom, semantic error that describes what went wrong in calling the methods you wrote for this lab.
 
