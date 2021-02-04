@@ -20,8 +20,8 @@ def test_single_root_tree():
 def test_add_left_and_right():
     tree = BinaryTree()
     tree.root = Node(111)
-    tree.root.left = Node(11)
-    tree.root.right = Node(1)
+    tree.left = Node(11)
+    tree.right = Node(1)
     actual = f"{tree.root.value}, {tree.left.value}, {tree.right.value}"
     expected = "111, 11, 1"
     assert actual == expected
@@ -47,6 +47,7 @@ def test_tree_inorder():
     tree.root.left.left = Node(111)
     tree.root.right.right = Node(22)
     actual = tree.in_order()
+    expected = [111, 11, 1, 2, 22]
     assert actual == expected
 
 # Can successfully return a collection from a postorder traversal
@@ -58,4 +59,5 @@ def test_tree_postorder():
     tree.root.left.left = Node(111)
     tree.root.left.right = Node(112)
     actual = tree.post_order()
+    expected = [111, 112, 11, 2, 1]
     assert actual == expected
