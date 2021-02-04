@@ -14,3 +14,5 @@
 ## Approach & Efficiency
 
 [PR for Binary Tree Implementation](https://github.com/NyxofDarkness/data-structures-and-algorithms/pull/44)
+
+[PR for Binary Tree Implementation to find max val](https://github.com/NyxofDarkness/data-structures-and-algorithms/pull/45)
