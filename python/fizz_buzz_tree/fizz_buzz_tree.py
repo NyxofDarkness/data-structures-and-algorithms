@@ -1,15 +1,51 @@
-# Write a function called FizzBuzzTree which takes a k-ary tree as an argument.
-# Without utilizing any of the built-in methods available to your language, determine whether or not the value of each node is divisible by 3, 5 or both. Create a new tree with the same structure as the original, but the values modified as follows:
-# If the value is divisible by 3, replace the value with “Fizz”
-# If the value is divisible by 5, replace the value with “Buzz”
-# If the value is divisible by 3 and 5, replace the value with “FizzBuzz”
-# If the value is not divisible by 3 or 5, simply turn the number into a String.
-# Return a new tree.
-from tree.tree import Node, BinaryTree, BinarySearchTree
-from stacks_and_queues.stacks_and_queues import Queue
+# from stacks_and_queues import Queue
 
-def fizz_buzz_additions(value):
-    """[replaces value with Fizzbuzz, Buzz, Fizz, or as a string]
+
+# from stacks_and_queues.stacks_and_queues import Queue
+# from stacks_and_queues.stacks_and_queues import Queue, Node
+from tree.tree import Node
+
+
+
+class Node_Situation:
+    def __init__(self, value):
+        self.value = value
+        self.child = []
+
+class Tree_situation:
+    def __init__(self, root=None, value=None):
+        self.root = root
+        # self.right = None
+        # self.left = None
+        # self.value = value
+
+    def fizzBuzzTree(self):
+        node_values = []
+
+        if self.root:
+            fizz_buzz_tree = Tree_situation(Tree_situation.fizz_buzz_additions(self.root))
+        else:
+            return 'Your tree is empty.'
+
+        def traverse(node):
+            node_values.append(node.value)
+            child_val = []
+            new_node = Node_Situation(node.value)
+
+            for child in node.child:
+                child = Tree_situation.fizz_buzz_additions(child)
+                child_val.append(child.value)
+                traverse(child)
+
+            for i in range(len(child_val)):
+                new_node.child.append(Node_Situation(child_val[i]))
+
+        traverse(self.root)
+        return fizz_buzz_tree, node_values
+
+    @staticmethod
+    def fizz_buzz_additions(f_b):
+        """[replaces value with Fizzbuzz, Buzz, Fizz, or as a string]
 
     Args:
         value ([int]): [value]
@@ -17,46 +53,30 @@ def fizz_buzz_additions(value):
     Returns:
         [string]: [either words depending on divisibility, or a string of int]
     """
-    if value % 15 == 0:
-        return "FizzBuzz"
-    elif value % 5 == 0:
-        return "Buzz"
-    elif value % 3 == 0:
-        return "Fizz"
-    else:
-        return str(value)
+        if f_b.value % 3 == 0 and f_b.value % 5 == 0:
+            f_b.value = "FizzBuzz"
+        elif f_b.value % 5 == 0:
+            f_b.value = "Buzz"
+        elif f_b.value % 3 == 0:
+            f_b.value = "Fizz"
+        else:
+            f_b.value = str(f_b.value)
+        return f_b
+        
 
-class Tree:
-    def __init__(self):
-        self.root = None
 
-class Node_Situation:
-    def __init__(self, value):
-        self.value = ValueError
-        self.child = []
-
-def FizzBuzzTree(tree):
-    # traverse nodes, on at a time
-    # compare nodes, if divisible by 3 replace node.value with Fizz, 5 replace node.value with Buzz, both can be added
-    # else add node to string
-    # return new BinaryTree
-    return_tree = Tree()
-    temp = Queue()
-    if tree.root:
-        temp.enqueue(tree.root)
-        return_tree.root = Node_Situation(fizz_buzz_additions(tree.root.value))
-    while not temp.is_empty():
-        temp_away = temp.dequeue()
-        for child in temp_away.child:
-            return_tree.root.child.append(Node_Situation(fizz_buzz_additions(child.value)))
-            if child.child:
-                temp.enqueue(child)
 
 
 if __name__ == "__main__":
-    tree = Tree()
-    tree.root = Node_Situation(1)
-    tree.root.child.append(Node_Situation(1))
+    pass
+    # tree = Tree()
+    # tree.root = Node(1)
+    # tree.root.child.append(Node(1))
+    # tree.root.child.append(Node(11))
+    # tree.root.child.append(Node(111))
+
+    # fizzBuzzTree(tree)
+
 
     # get_tree = BinaryTree()
     # root_string = ""
