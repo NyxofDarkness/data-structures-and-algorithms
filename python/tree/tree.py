@@ -67,6 +67,11 @@ class BinaryTree:
             return max
         max = traverse(self.root, max)[0]
         return max
+
+        # Write a breadth first traversal method which takes a Binary Tree as its unique input. Without utilizing any of the built-in methods available to your language, traverse the input tree using a Breadth-first approach, and return a list of the values in the tree in the order they were encountered.
+
+
+        
 # which returns an array of the values, ordered appropriately.
 # Any exceptions or errors that come from your code should be semantic, capturable errors. For example, rather than a default error thrown by your language, your code should raise/throw a custom, semantic error that describes what went wrong in calling the methods you wrote for this lab.
 
