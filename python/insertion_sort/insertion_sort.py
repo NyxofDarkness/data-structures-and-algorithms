@@ -12,16 +12,16 @@
         
 #       arr[j + 1] <-- temp
 
-arr = [8,4,23,42,16,15]
+
 def insertion_sort(arr):
-    for i in range(len(arr)):
-        # for each index on the length of the array, set to i
-        min = i
-        for j in range(i+1, len(arr)):
-            #loop again, for each index, move forward to length of array
-            if arr[min] > arr[j]:
-                # if the i, or min index is greater than the next index at j, set min to j
-                min = j
-        # swap i and j index values, so the lowest is first
-        arr[i], arr[min] = arr[min], arr[i]
-    
+    for i in range(1, len(arr)):
+
+        current = arr[i]
+        where_we_are_in_arr = i
+        while where_we_are_in_arr > 0 and arr[where_we_are_in_arr-1] > current:
+            arr[where_we_are_in_arr] = arr[where_we_are_in_arr - 1]
+            where_we_are_in_arr = where_we_are_in_arr - 1
+
+        arr[where_we_are_in_arr] = current
+        
+    return arr
