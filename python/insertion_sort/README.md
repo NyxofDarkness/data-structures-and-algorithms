@@ -15,4 +15,4 @@ Write a BLOG.mg file to show functionality
 
 [BLOG post about Insertion Sort](./insertion_sort/insertion_sort.py)
 
-[PR for Insertion Sort]()
+[PR for Insertion Sort](https://github.com/NyxofDarkness/data-structures-and-algorithms/pull/48)
