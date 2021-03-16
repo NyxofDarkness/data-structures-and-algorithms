@@ -23,6 +23,6 @@ Successfully hash a key to an in-range valu
 
 ## Solution
 
-[]()
+[Hashtable](/home/nyx/projects/codefellows/data-structures-and-algorithms/python/hashtable/hashtable.py)
 
-[PR for Insertion Sort]()
+[PR for HashTable](https://github.com/NyxofDarkness/data-structures-and-algorithms/pull/51)
