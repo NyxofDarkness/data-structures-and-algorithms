@@ -6,17 +6,27 @@
 
 -[x] Without utilizing any of the built-in library methods available to your language, return the first word to occur more than once in that provided string.
 
+-[x] write tests for each method used
+
 
 ## Approach & Efficiency
 
-Utilize the Single-responsibility principle: any methods you write should be clean, reusable, abstract component parts to the whole challenge. You will be given feedback and marked down if you attempt to define a large, complex algorithm in one function definition.
+I want to define method to seperate a string into list
+I want to iterate over that list, setting a temp variable to hold the position we are comparing.
+I want to iterate over the string-turned-list starting from our temp position
+if I find a match, I will return match
+if nothing matches, we will set our temp vaiable to the next iteration
+if entire string is unique, I will return an error message, string is unique
 
-Write at least three test assertions for each method that you define.
-
-Ensure your tests are passing before you submit your solution.
 
 ## Solution
 
 [Repeated Word](/home/nyx/projects/codefellows/data-structures-and-algorithms/python/repeated_word/repeated_word.py)
 
 [PR for Repeated Word]()
+
+![Whiteboard for Code Challenge 31](../assets/CodeChallenge_31.png)
+
+## Contributions
+
+[.string from stack overflow](https://stackoverflow.com/questions/4371231/removing-punctuation-from-python-list-items)
