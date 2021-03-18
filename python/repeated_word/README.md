@@ -23,7 +23,7 @@ if entire string is unique, I will return an error message, string is unique
 
 [Repeated Word](/home/nyx/projects/codefellows/data-structures-and-algorithms/python/repeated_word/repeated_word.py)
 
-[PR for Repeated Word]()
+[PR for Repeated Word](https://github.com/NyxofDarkness/data-structures-and-algorithms/pull/52)
 
 ![Whiteboard for Code Challenge 31](../assets/CodeChallenge_31.png)
 
