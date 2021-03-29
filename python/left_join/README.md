@@ -22,4 +22,4 @@ SPACE: o(n)- Not much, two table turns into one.
 
 ![Tree Intersection Whiteboard](../assets/CodeChallenge_33.png)
 
-[PR for Left Join](https://github.com/NyxofDarkness/data-structures-and-algorithms/pull/51)
+[PR for Left Join](https://github.com/NyxofDarkness/data-structures-and-algorithms/pull/55)

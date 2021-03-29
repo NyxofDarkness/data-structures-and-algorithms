@@ -3,7 +3,7 @@ from hashtable.hashtable import HashTable
 def left_join(ht1, ht2):
     hashtable = HashTable(size=1024)
     for pos in ht1:
-        if ht2.key.contains(pos.key):
+        if ht2[0].contains(pos.key):
             hashtable.add(ht1.key, ht1[pos.value], ht2[pos.key.value])
         else:
             hashtable.add(ht1.key, ht1[pos.value], "NULL")
