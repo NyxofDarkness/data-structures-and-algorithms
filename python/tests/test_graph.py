@@ -52,3 +52,9 @@ def test_size_fail():
     expected = 3
     actual = graph.size()
     assert actual != expected
+
+def test_get_nodes():
+    pass
+
+def test_get_neighbor():
+    pass
